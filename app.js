@@ -104,8 +104,6 @@ app.post("/projects/:id/comments", async (req, res) => {
   }
 });
 
-
-
 mongoose.connect(
   "mongodb+srv://dylwill:dylwill@codetest.tj8fb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   { useUnifiedTopology: true, useNewUrlParser: true},
