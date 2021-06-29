@@ -5,6 +5,7 @@ const User = require("./models/user");
 const Project = require("./models/project");
 const Comment = require("./models/comment");
 const app = express();
+let port = process.env.PORT || 3000;
 
 var ObjectId = mongoose.Types.ObjectId
 
@@ -112,6 +113,6 @@ mongoose.connect(
   console.log("connected to mongoDB");
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('listening on 3000');
 });
