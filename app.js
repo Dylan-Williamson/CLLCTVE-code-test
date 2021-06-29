@@ -106,7 +106,7 @@ app.post("/projects/:id/comments", async (req, res) => {
 
 
 mongoose.connect(
-  process.env.DB_CONNECTION_STRING,
+  "mongodb+srv://dylwill:dylwill@codetest.tj8fb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   { useUnifiedTopology: true, useNewUrlParser: true},
   (req, res) => {
   console.log("connected to mongoDB");
